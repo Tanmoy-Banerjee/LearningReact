@@ -1,13 +1,14 @@
 import styles from "./App.module.css";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import Display from "./components/Display";
+import ButtonsContainer from "./components/ButtonsContainer";
 function App() {
   
   return (
-    <div id="calculator">
-      <input id="display" type="text"></input>
-      <div id="buttons-container">
-        <button>c</button>
-      </div>
+    <div className= {styles.calculator}>
+      
+      <Display></Display>
+      <ButtonsContainer></ButtonsContainer>
     </div>
   );
 }
